@@ -3,8 +3,84 @@
 <head>
     <title>Document</title>
     <link href="css/style.css" rel="stylesheet" />
+
+    <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Lodge</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+
 </head>
 <body>
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              La Casa del Violín
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="nosotros.html"> Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="instrumentos.html">Instrumentos </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Login</a>
+                </li>
+              </ul>
+
+            </div>
+            <div class="quote_btn-container ">
+              <a href="">
+                <img src="images/cart.png" alt="">
+                <div class="cart_number">
+                  0
+                </div>
+              </a>
+              <form class="form-inline">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
       
   <section class="price_section layout_padding">
     <div class="container">
@@ -76,6 +152,56 @@
             </div>
          </div>
           <!--end item 1-->
+          <!-- START SECTION SHOPPING CART -->
+  <section class="shopping-cart">
+    <div class="container">
+        <h1 class="text-center">Tu cesta</h1>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="shopping-cart-header">
+                    <h6>Producto</h6>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="shopping-cart-header">
+                    <h6 class="text-truncate">Precio</h6>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="shopping-cart-header">
+                    <h6>Cantidad</h6>
+                </div>
+            </div>
+        </div>
+        <!-- ? START SHOPPING CART ITEMS -->
+        <div class="shopping-cart-items shoppingCartItemsContainer">
+        </div>
+        <!-- ? END SHOPPING CART ITEMS -->
+        <!-- START TOTAL -->
+        <div class="row">
+          <div class="col-12">
+              <div class="shopping-cart-total d-flex align-items-center">
+                  <p class="mb-0">Total</p>
+                  <p class="ml-4 mb-0 shoppingCartTotal">S/0</p>
+                  <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                      data-delay="2000">
+                      <div class="toast-header">
+                          <span>✅</span>
+                          <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                          <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="toast-body text-white">
+                          Se aumentó correctamente la cantidad
+                      </div>
+                  </div>
+                  <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                      data-target="#comprarModal">Comprar</button>
+              </div>
+          </div>
+      </div>
           
 
     
